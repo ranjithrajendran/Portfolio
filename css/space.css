@@ -7,39 +7,273 @@ body {
     font-family: 'Merienda', 'cursive';
     margin: 0 auto;
     display: block;
-    background-image: url("ranjith.jpg");
+    background-image: url("bc1.jpeg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
+    font-size: 18px;
+    font-weight: 700;
     width: 100%;
     font-family: 'Merienda', 'cursive';
     padding: 1% 2%;
-    background: rgba(48, 43, 43, 0.425);
+    background: rgba(253, 249, 249, 0.801);
     display: flex;
     justify-content: space-evenly;
-    color: rgb(236, 236, 236);
     position: fixed;
-    box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 20px 36px -20px rgba(56, 55, 55, 0.644);
     z-index: 1;
+    top: 0;
 }
 
 header img {
-    background: rgba(163, 163, 163, 0.342);
     top: 10px;
     left: 10%;
     height: 55px;
+    padding: 0% 4%;
+}
+
+header a {
+    width: 14%;
+    padding-top: 1.5%;
+    color: rgb(29, 28, 28);
+    text-decoration: none;
+}
+
+.home {}
+
+.heading {
+    margin: 0;
+    width: 500px;
+    height: 800px;
+    padding-top: 15%;
+    background-color: rgba(73, 70, 70, 0.651);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bolder;
+    color: rgba(241, 234, 234, 0.993);
+    font-size: 60px;
+    text-align: center;
+}
+
+#tabs {
+    padding: 18% 3% 0 3%;
+    clear: both;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+#tabs ul {
+    color: rgb(239, 242, 245);
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+#tabs li {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    text-align: center;
+    width: 32%;
+    font-size: 18px;
+}
+
+#tabs a {
+    font-weight: 700;
+    font-family: 'Merienda', 'cursive';
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#tabs p {
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Merienda', 'cursive';
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+
+.quotes {
+    font-family: 'Merienda', 'cursive';
+    /* padding: 25% 15%; */
+    font-size: 18px;
+}
+
+.heading span {
+    color: rgba(255, 0, 0, 0.678);
 }
 
 .content {
-    padding-top: 80px;
+    padding: 0 10%;
 }
 
-.heading {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-weight: 500;
-    color: rgba(243, 44, 44, 0.74);
-    font-size: 80px;
+.section {
+    padding-bottom: 5%;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+    background-color: rgba(40, 136, 136, 0.822);
+}
+
+.section h1 {
+    padding-top: 7%;
     text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.section div {
+    line-height: .8em;
+}
+
+.profession {
+    padding: 0% 10% 5% 10%;
+    font-size: 20px;
+}
+
+.profession p {
+    color: rgb(224, 225, 226);
+}
+
+.education .card:nth-of-type(2n+1) {
+    margin-left: 50%;
+    padding-left: 7%;
+    border-left: 7px solid rgb(84, 194, 33);
+}
+
+.education .card:nth-of-type(2n) {
+    margin-right: 49.25%;
+    padding-right: 7%;
+    text-align: right;
+    border-right: 7px solid rgb(84, 194, 33);
+}
+
+.study {
+    min-height: 700px;
+}
+
+.education {
+    min-height: 700px;
+    padding: 0% 8% 5% 8%;
+    display: block;
+}
+
+.education .card {
+    padding: 2% 0%;
+    max-width: 100%;
+}
+
+.mark {
+    height: 15px;
+    background-color: rgb(11, 177, 20);
+    color: rgb(255, 250, 250);
+    display: inline-block;
+    font-size: 12px;
+    padding: 1%;
+    text-align: right;
+}
+
+.skills {
+    padding: 0% 5% 5% 5%;
+}
+
+.professionalSkills h3 {
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10% 0;
+    color: rgb(244, 246, 248);
+    background-color: rgba(40, 136, 136, 0.76);
+    border: 0;
+}
+
+.professionalSkills h3:hover,
+div h4:hover {
+    color: rgb(26, 23, 23);
+    transition: all .25s ease;
+}
+
+.professionalSkills div {
+    line-height: .5em;
+    height: auto;
+    border: 0;
+    color: rgb(244, 246, 248);
+    background-color: rgba(40, 136, 136, 0.562);
+}
+
+.professionalSkills div p {
+    padding-left: 7%;
+    color: rgb(225, 226, 226);
+}
+
+.professionalSkills div h4 {
+    font-size: 18px;
+}
+
+.professionalSkills div h4::before {
+    content: ' \25CF ';
+    padding-right: 1%;
+    color: rgb(244, 246, 248);
+    font-size: 22px;
+}
+
+.contact .con {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 7% 10% 2% 10%;
+}
+
+.contactCard {
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.contact span {
+    font-size: 13px;
+}
+
+.contactCard:hover {
+    color: rgba(172, 5, 5, 0.897);
+    transition: all .25s ease;
+}
+
+.contact img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .education .card:nth-of-type(2n) {
+        margin-right: 49%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education .card:nth-of-type(2n) {
+        margin-right: 48.55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 0%;
+    }
+    .education .card:nth-of-type(2n) {
+        margin-right: 47.55%;
+    }
+    body {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .education .card:nth-of-type(2n) {
+        margin-right: 48.25%;
+    }
 }
