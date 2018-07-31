@@ -75,6 +75,7 @@ header a {
 #tabs li {
     background: transparent;
     border: 0;
+    outline: 0;
     margin: 0;
     text-align: center;
     width: 32%;
@@ -82,6 +83,8 @@ header a {
 }
 
 #tabs a {
+    border: 0;
+    outline: 0;
     font-weight: 700;
     font-family: 'Merienda', 'cursive';
     text-align: center;
@@ -96,6 +99,14 @@ header a {
     text-align: left;
     font-size: 18px;
     margin: 0;
+}
+
+.colo {
+    color: red;
+}
+
+#color1 {
+    color: aqua;
 }
 
 .quotes {
@@ -126,13 +137,14 @@ header a {
     font-size: 35px;
 }
 
-.section div {
-    line-height: .8em;
+.section {
+    line-height: 1.2em;
 }
 
 .profession {
     padding: 0% 10% 5% 10%;
     font-size: 20px;
+    min-height: 430px;
 }
 
 .profession p {
@@ -152,12 +164,8 @@ header a {
     border-right: 7px solid rgb(84, 194, 33);
 }
 
-.study {
-    min-height: 700px;
-}
-
 .education {
-    min-height: 700px;
+    min-height: 766px;
     padding: 0% 8% 5% 8%;
     display: block;
 }
@@ -179,6 +187,7 @@ header a {
 
 .skills {
     padding: 0% 5% 5% 5%;
+    min-height: 633px;
 }
 
 .professionalSkills h3 {
@@ -189,16 +198,18 @@ header a {
     color: rgb(244, 246, 248);
     background-color: rgba(40, 136, 136, 0.76);
     border: 0;
+    outline: 0;
 }
 
 .professionalSkills h3:hover,
-div h4:hover {
+div h4:hover,
+.contactCard:hover {
     color: rgb(26, 23, 23);
     transition: all .25s ease;
 }
 
 .professionalSkills div {
-    line-height: .5em;
+    line-height: .3em;
     height: auto;
     border: 0;
     color: rgb(244, 246, 248);
@@ -206,6 +217,7 @@ div h4:hover {
 }
 
 .professionalSkills div p {
+    line-height: 1em;
     padding-left: 7%;
     color: rgb(225, 226, 226);
 }
@@ -221,6 +233,10 @@ div h4:hover {
     font-size: 22px;
 }
 
+.contact {
+    min-height: 308px;
+}
+
 .contact .con {
     display: flex;
     justify-content: space-evenly;
@@ -229,6 +245,7 @@ div h4:hover {
 }
 
 .contactCard {
+    position: relative;
     width: 25%;
     display: inline-block;
     float: left;
@@ -236,11 +253,7 @@ div h4:hover {
 
 .contact span {
     font-size: 13px;
-}
-
-.contactCard:hover {
-    color: rgba(172, 5, 5, 0.897);
-    transition: all .25s ease;
+    font-weight: 600;
 }
 
 .contact img {
